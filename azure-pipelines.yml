@@ -4,11 +4,11 @@
 # https://aka.ms/yaml
 
 trigger:
-- none
-
-pool:
-  vmImage: 'windows-latest'
-
+  branches:
+    include:
+      - main
+pool :
+  name: 'Default'      
 variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
